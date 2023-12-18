@@ -1,0 +1,20 @@
+account:
+  service:
+    name: account
+    discovery:
+      enabled: true
+      service-url: http://localhost:8761/eureka/apps/
+
+customer:
+  service:
+    name: customer
+    discovery:
+      enabled: true
+      service-url: http://localhost:8761/eureka/apps/
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
